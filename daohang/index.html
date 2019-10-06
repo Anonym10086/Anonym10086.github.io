@@ -2,12 +2,25 @@
 <head>
 <title>冷魅</title>
 </head>
-<body style="
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-">
-<iframe src="http://xn--b8q260p.com/daohang/" frameborder="0" width="100%" scrolling="no" height="100%" leftmargin="0" topmargin="0"></iframe>
+<body>
+<script type="text/javascript">
+function browserRedirect() {
+var sUserAgent= navigator.userAgent.toLowerCase();
+var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+var bIsAndroid= sUserAgent.match(/android/i) == "android";
+var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+window.location.href= 'https://anonym10086.github.io/daohang/';
+} else {
+window.location= 'http://xn--b8q260p.com/daohang/';
+}
+}
+browserRedirect();
+</script>
 </body>
 </html>
